@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — МБУ "Жилищное Управление"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icons8-автобус-48.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">
+                    <div class="logo_icon"><img src="./img/icons8-автобус-48.png" width="70" height="70">
+                    </div>
+                    <div class="logo_text">
+                        <span class="main_name">ЖИЛИЩНОЕ</span>
+                        <span class="sub_name">УПРАВЛЕНИЕ</span>
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <a href="page1.html" class="nav_link">Главная</a>
+                    <a href="page2.html" class="nav_link">О нас</a>
+                    <a href="page3.html" class="nav_link active">Контакты</a>
+                    <a href="page4.html" class="nav_link">СТО</a>
+                </nav>
+
+                <button class="btn_call" onclick="window.location.href='tel:+78214094245'">
+                    Позвонить
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="contacts_page">
+        <div class="container">
+            <h1 class="page_title">Контакты</h1>
+            
+            <div class="contacts_content">
+                <div class="contact_info">
+                    <div class="contact_item">
+                        <span class="label">Телефон</span>
+                        <a href="tel:+78214094245" class="phone">+7 (821) 409-42-45</a>
+                    </div>
+                    <div class="contact_item">
+                        <span class="label">Адрес</span>
+                        <p>169460, Республика Коми,
+Ижемский район, с. Ижма,
+ул. Советская, 149</p>
+                    </div>
+                    <div class="contact_item">
+                        <span class="label">Пункт техосмотра</span>
+                        <p>169460, Республика Коми,
+Ижемский район, с. Ижма,
+ул. Чупрова, 126</p>
+                    </div>
+                    <div class="contact_item">
+                        <span class="label">Электронный адрес</span>
+                        <p>odno_okno_izhma@mail.ru</p>
+                    </div>
+                    <div class="contact_item">
+                        <span class="label">Режим работы</span>
+                        <p>Пн–Чт: 08:30 — 17:00
+                        Пт: 08:30-16:00
+Обед: 13:00 — 14:00 <br>
+Сб-Вс: выходной</p>
+                    </div>
+                    <div class="contact_item">
+                        <span class="label">Режим работы пункта техосмотра</span>
+                        <p>Пн–Пт: 08:00 — 17:00
+Обед: 13:00 — 14:00 <br>
+Сб-Вс: выходной</p>
+                    </div>
+                </div>
+
+                <div class="contact_form">
+                    <h3>Написать нам</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <textarea placeholder="Ваше сообщение" rows="6" required></textarea>
+                        <button type="submit" class="btn btn_primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_logo">
+                    <span>МБУ "Жилищное Управление"</span>
+                </div>
+                <p>© 2026 Муниципальное бюджетное учреждение «Жилищное Управление».
+Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо! Ваше сообщение отправлено.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
